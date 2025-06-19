@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Equipo</title>
+    <link rel="stylesheet" href="../../teams/css/teams.css">
+</head>
+<body>
+    <div class="container">
+        <div id="alert-container"></div>
+        <form id="team-create-form" class="team-form">
+            <div class="form-group">
+                <label for="teamName">Nombre del Equipo</label>
+                <input type="text" id="teamName" name="teamName" placeholder="Nombre del equipo" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="primaryColor">Color Primario</label>
+                <div class="color-input-group">
+                    <input type="color" id="primaryColor" name="primaryColor" class="color-picker" value="#000000" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="secondaryColor">Color Secundario</label>
+                <div class="color-input-group">
+                    <input type="color" id="secondaryColor" name="secondaryColor" class="color-picker" value="#000000" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="teamRank">Rango</label>
+                <select id="teamRank" name="teamRank" required>
+                    <option value="">Seleccionar rango</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Crear Equipo</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Partidos Abiertos</title>
+    <link rel="stylesheet" href="../../matches/css/matches.css">
+</head>
+<body>
+  <div class="container">
+    <div id="openMatchesList" class="open-matches-list list-container">
+      <div id="alert-container"></div>
+      <h3>Listado de Partidos Abiertos</h3>
+      <input type="text" id="searchOpenMatchInput" placeholder="Buscar partidos abiertos..." style="margin-bottom:10px;width:100%">
+      <div class="filters-container" style="margin-bottom: 15px;">
+        <div class="filter-group">
+          <label for="filterName">Nombre de la cancha</label>
+          <select id="filterName" class="filter-select"></select>
+        </div>
+        <div class="filter-group">
+          <label for="filterDate">Fecha</label>
+          <input type="date" id="filterDate" class="filter-input">
+        </div>
+      </div>
+      <div id="openMatchesListContainer"></div>
+      <div class="pagination">
+        <button class="btn-page" id="prevPage" disabled>Anterior</button>
+        <span class="page-info">Página 1 de 1</span>
+        <button class="btn-page" id="nextPage" disabled>Siguiente</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

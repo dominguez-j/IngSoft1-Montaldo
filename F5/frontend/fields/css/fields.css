@@ -1,0 +1,23 @@
+/* ================= MAIN SECTION STYLES ================= */
+#section-fields {
+    background: #232626;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#section-fields h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+#section-fields-list {
+    width: 45%;
+    min-width: 340px;
+    max-width: 500px;
+    margin: 0;
+}

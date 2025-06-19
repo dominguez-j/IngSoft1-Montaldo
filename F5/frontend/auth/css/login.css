@@ -1,0 +1,33 @@
+/* ================= LOGIN FORM CONTAINER ================= */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--black);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--primary-color);
+  padding: 2.5rem 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  color: var(--text-color);
+}
+
+/* ================= FORM GROUP STYLES ================= */
+.login-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 700px) {
+  .login-form {
+      padding: 1.5rem 0.5rem;
+  }
+}

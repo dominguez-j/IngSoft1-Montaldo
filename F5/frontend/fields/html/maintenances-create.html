@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Mantenimiento</title>
+</head>
+<body>
+  <div class="container">
+    <div id="alert-container"></div>
+    <form id="maintenance-create-form" class="maintenance-form">
+        <div class="form-group">
+            <label for="fieldName">Cancha</label>
+            <select id="fieldName" name="fieldName" class="form-control" required></select>
+        </div>
+
+        <div id="freeSlotsListContainer" class="free-slots-container">
+            <div class="pagination">
+                <button class="btn-page" id="prevPage" disabled>Anterior</button>
+                <span class="page-info">Página 1 de 1</span>
+                <button class="btn-page" id="nextPage" disabled>Siguiente</button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="reason">Motivo del mantenimiento</label>
+            <textarea id="reason" name="reason" class="form-control" required placeholder="Ingrese el motivo del mantenimiento"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Crear Mantenimiento</button>
+    </form>
+  </div>
+</body>
+</html>

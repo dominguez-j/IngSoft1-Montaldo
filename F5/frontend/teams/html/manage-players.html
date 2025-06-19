@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar jugadores</title>
+    <link rel="stylesheet" href="../../teams/css/teams.css">
+</head>
+<body>
+  <div class="container">
+    <div id="alert-container"></div>
+    <form id="manage-players-form" class="team-form">
+        <div class="form-group">
+          <label for="teamName">Equipo</label>
+          <select id="teamName" name="teamName" class="form-control" required></select>
+        </div>
+
+        <div class="form-group">
+          <label for="playerMail">Mail del jugador</label>
+          <input type="text" id="playerMail" name="playerMail" class="form-control" required>
+        </div>
+        
+        <button type="submit" id="addPlayerBtn" class="btn-primary">Agregar Jugador</button>
+
+        <div id="playersList" class="players-list list-container">
+          <h3>Jugadores del Equipo</h3>
+          <div id="playersListContainer"></div>
+        </div>
+    </form>
+  </div>
+</body>
+</html>

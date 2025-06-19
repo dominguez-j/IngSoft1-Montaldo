@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Sistema de Gestión</title>
+    <link rel="icon" type="image/x-icon" href="../../common/assets/logo pagina.ico">
+    <link rel="stylesheet" href="../../common/css/base.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="../../index.html" class="home-link">
+                    <img src="../../common/assets/logo cancha.png" alt="Logo Fútbol 5" class="logo-img">
+                    Inicio
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Iniciar Sesión</h1>
+        <form id="loginForm" class="login-form">
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn-login">Iniciar Sesión</button>
+            <div class="form-links">
+                <a href="recover-password.html" class="link">¿Olvidaste tu contraseña?</a>
+                <br>
+                <a href="register.html" class="link">¿No tienes cuenta? Regístrate</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Grupo 4. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../js/login.js"></script>
+</body>
+</html> 

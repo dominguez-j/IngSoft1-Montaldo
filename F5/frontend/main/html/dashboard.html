@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Gestión</title>
+    <link rel="stylesheet" href="../../common/css/base.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../common/css/components.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="icon" type="image/x-icon" href="../../common/assets/logo pagina.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-center">
+                <li><a href="dashboard.html" class="home-link">
+                    <img src="../../common/assets/logo cancha.png" alt="Logo Fútbol 5" class="logo-img">
+                    Dashboard
+                </a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="#" class="btn-header btn-profile" id="profileBtn">Mi Perfil</a></li>
+                <li><a href="#" class="btn-header btn-logout" id="logoutBtn">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="profilePopup" class="profile-popup" style="display: none;">
+        <div class="profile-popup-content">
+            <div class="perfil-info">
+                <h1 id="nameProfile">Nombre Apellido</h1>
+                <p><i class="fas fa-envelope"></i> <span id="emailProfile">correo@ejemplo.com</span></p>
+                <p><i class="fas fa-map-marker-alt"></i> <span id="zoneProfile">Zona</span></p>
+            </div>
+        </div>
+    </div>
+
+    <main class="dashboard-main dashboard-welcome">
+        <div class="dashboard-welcome-container">
+            <div class="welcome-card">
+                <div class="welcome-icon">
+                    <i class="fas fa-futbol"></i>
+                </div>
+                <h2>¡Bienvenido al Panel de Administración!</h2>
+                <p>Selecciona una opción del menú para comenzar.</p>
+            </div>
+        </div>
+        <aside class="sidebar"></aside>
+        <aside class="sub-sidebar" style="display:none;"></aside>
+        <section class="dashboard-content">
+            <div id="section-create-field" class="dashboard-section" style="display:none;"></div>
+            <div id="section-list-fields" class="dashboard-section" style="display:none;"></div>
+            <div id="section-manage-players" class="dashboard-section" style="display:none;"></div>
+            <div id="section-scheduler-create" class="dashboard-section" style="display:none;"></div>
+            <div id="section-maintenances-create" class="dashboard-section" style="display:none;"></div>
+            <div id="section-reservations-on-my-fields" class="dashboard-section" style="display:none;"></div>
+            <div id="section-create-team" class="dashboard-section" style="display:none;"></div>
+            <div id="section-list-teams" class="dashboard-section" style="display:none;"></div>
+            <div id="section-current-reservations" class="dashboard-section" style="display:none;"></div>
+            <div id="section-past-reservations" class="dashboard-section" style="display:none;"></div>
+            <div id="section-all-fields" class="dashboard-section" style="display:none;"></div>
+            <div id="section-field-details" class="dashboard-section" style="display:none;"></div>
+            <div id="section-current-matches" class="dashboard-section" style="display:none;"></div>
+            <div id="section-past-matches" class="dashboard-section" style="display:none;"></div>
+            <div id="section-organize-teams-matches" class="dashboard-section" style="display:none;"></div>
+            <div id="section-create-open-match" class="dashboard-section" style="display:none;"></div>
+            <div id="section-create-closed-match" class="dashboard-section" style="display:none;"></div>
+            <div id="section-join-open-matches" class="dashboard-section" style="display:none;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Grupo 4. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script type="module" src="../js/dashboard-registry.js"></script>
+    <script type="module" src="../sections/fields-section.js"></script>
+    <script type="module" src="../sections/teams-section.js"></script>
+    <script type="module" src="../sections/reservations-section.js"></script>
+    <script type="module" src="../sections/my-matches-section.js"></script>
+    <script type="module" src="../sections/matches-section.js"></script>
+    <script type="module" src="../sections/all-fields-section.js"></script>
+    <script type="module" src="../js/section-config/section-registry.js"></script>
+    <script type="module" src="../js/section-config/section-renderer.js"></script>
+    <script type="module" src="../js/section-config/section-controller.js"></script>
+    <script type="module" src="../js/section-config/section-loader.js"></script>
+    <script type="module" src="../js/dashboard.js"></script>
+</body>
+</html> 

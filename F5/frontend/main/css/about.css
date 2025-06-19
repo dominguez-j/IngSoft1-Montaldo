@@ -1,0 +1,59 @@
+/* ================= GENERAL SECTION STYLES ================= */
+.about-section {
+    background-color: #1c1c1c;
+    color: var(--text-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    padding: 2rem 2.5rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ================= TEAM MEMBERS SECTION ================= */
+.integrants {
+    margin-top: 2.5rem;
+}
+
+.integrants h2 {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* ================= TEAM GRID LAYOUT ================= */
+.integrants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+}
+
+/* ================= TEAM MEMBER CARD ================= */
+.integrant {
+    background: var(--dark-gray);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    padding: 1.2rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* ================= TEAM MEMBER HOVER EFFECTS ================= */
+.integrant:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(46,204,113,0.18);
+    border-color: var(--secondary-color);
+}

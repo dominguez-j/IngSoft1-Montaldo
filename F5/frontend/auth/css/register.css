@@ -1,0 +1,79 @@
+/* ================= FORM CONTAINER ================= */
+.register-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2rem;
+    background: var(--black);
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow);
+    border: 2px solid var(--primary-color);
+    padding: 2.5rem 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    color: var(--text-color);
+}
+
+/* ================= FORM GROUPS ================= */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+    justify-content: flex-end;
+    grid-column: auto;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.register-form .form-group:first-of-type {
+    grid-column: 1 / 2;
+}
+
+/* ================= FORM ELEMENTS ================= */
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* ================= BUTTONS ================= */
+.btn-login {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 300px;
+    margin: 1.5rem auto 0 auto;
+    display: block;
+}
+
+/* ================= LINKS ================= */
+.form-links {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.form-links a {
+    color: inherit;
+    text-decoration: none !important;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.form-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 700px) {
+    .register-form {
+        grid-template-columns: 1fr;
+        padding: 1.5rem 0.5rem;
+    }
+    .btn-login, 
+    .form-links {
+        grid-column: 1 / -1;
+        max-width: 90vw;
+    }
+}

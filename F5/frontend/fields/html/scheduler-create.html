@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Horario</title>
+    <link rel="stylesheet" href="../../fields/css/fields.css">
+</head>
+<body>
+  <div class="container">
+    <div id="alert-container"></div>
+    <form id="scheduler-create-form" class="field-form">
+        <div class="form-group">
+          <label for="fieldName">Cancha</label>
+          <select id="fieldName" name="fieldName" class="form-control" required></select>
+        </div>
+        <div class="form-group">
+          <label for="day">Día</label>
+          <select id="day" name="day" class="form-control" required></select>
+        </div>
+        <div class="form-group">
+          <label for="hourStart">Hora de apertura</label>
+          <input type="time" id="hourStart" name="hourStart" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="hourEnd">Hora de cierre</label>
+          <input type="time" id="hourEnd" name="hourEnd" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="slotDurationMinutes">Duración del turno</label>
+            <select id="slotDurationMinutes" name="slotDurationMinutes" class="form-control" required>
+              <option value="">Seleccionar</option>
+              <option value="30">Media hora</option>
+              <option value="60">Una hora</option>
+              <option value="90">Una hora y media</option>
+              <option value="120">Dos horas</option>
+            </select>
+        </div>
+        <button type="submit" class="btn-primary">Crear Horario</button>
+    </form>
+  </div>
+</body>
+</html>

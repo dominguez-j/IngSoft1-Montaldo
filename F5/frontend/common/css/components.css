@@ -1,0 +1,261 @@
+/* ================= COMMON COMPONENTS ================= */
+.card {
+    background: #181818;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.card-info h3 {
+    color: var(--secondary-color);
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.card strong {
+    color: var(--secondary-color);
+}
+
+.card .card-actions {
+    margin-top: 0.7rem;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.card .btn-edit, 
+.card .btn-delete {
+    padding: 0.4rem 1rem;
+    border-radius: 0.6rem;
+    font-size: 0.97rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.card .btn-edit {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.card .btn-edit:hover {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+.card .btn-delete {
+    background: var(--accent-color);
+    color: var(--white);
+}
+
+.card .btn-delete:hover {
+    background: #c0392b;
+}
+
+/* ================= FILTERS STYLES ================= */
+.filters-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    padding: 12px;
+    background: #181818;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) #232626;
+}
+  
+.filters-container::-webkit-scrollbar {
+    height: 6px;
+}
+  
+.filters-container::-webkit-scrollbar-track {
+    background: #232626;
+    border-radius: 3px;
+}
+  
+.filters-container::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+}
+  
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 140px;
+}
+  
+.filter-group label {
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+  
+.filter-select {
+    flex: 0 1 auto;
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background-color: #232626;
+    color: var(--text-color);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.filter-select:hover {
+    border-color: var(--secondary-color);
+    background-color: #2a2d2d;
+}
+  
+.filter-select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(107, 232, 156, 0.15);
+    background-color: #2a2d2d;
+}
+  
+.filter-select option {
+    background-color: #232626;
+    color: var(--text-color);
+    padding: 8px;
+    font-size: 13px;
+}
+  
+@media (max-width: 768px) {
+    .filters-container {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .filter-group {
+        flex: 1 1 calc(50% - 8px);
+        min-width: 120px;
+    }
+}
+  
+/* ================= LOADING STYLES ================= */
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+  
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: 3px solid var(--text-color);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ================= FREE SLOTS STYLES ================= */
+.free-slots-container {
+    margin: 20px 0;
+}
+
+.free-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.free-slot {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #232626;
+    color: #fff;
+}
+
+.free-slot:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.free-slot.selected {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.slot-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.slot-time {
+    color: #ccc;
+}
+
+#freeSlotsListContainer {
+    margin-top: 2rem;
+}
+
+#freeSlotsListContainer h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+} 
+
+.slot-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-confirm {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-confirm:hover {
+    background-color: var(--secondary-color-dark);
+}
+
+.free-slot.selected {
+    border: 2px solid var(--secondary-color);
+    background-color: rgba(107, 232, 156, 0.1);
+}
+  

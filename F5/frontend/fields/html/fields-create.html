@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cancha</title>
+    <link rel="stylesheet" href="../../fields/css/fields.css">
+</head>
+<body>
+  <div class = "container">
+    <div id="alert-container"></div>
+    <form id="field-create-form" class="field-form">
+      <div class="form-group">
+        <label for="fieldName">Nombre</label>
+        <input type="text" id="fieldName" name="fieldName" class="form-control" placeholder="Nombre de la cancha" required>
+      </div>
+      <div class="form-group">
+        <label for="fieldType">Tipo de suelo</label>
+        <select id="fieldType" name="fieldType" class="form-control" required></select>
+      </div>
+      <div class="form-group">
+        <label for="fieldRoof">Techada</label>
+        <select id="fieldRoof" name="fieldRoof" class="form-control" required>
+          <option value="">Seleccionar</option>
+          <option value="true">Sí</option>
+          <option value="false">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fieldLights">Iluminación</label>
+        <select id="fieldLights" name="fieldLights" class="form-control" required>
+          <option value="">Seleccionar</option>
+          <option value="true">Sí</option>
+          <option value="false">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fieldZone">Zona</label>
+        <select id="fieldZone" name="fieldZone" class="form-control" required></select>
+      </div>
+      <div class="form-group">
+        <label for="fieldAddress">Dirección</label>
+        <input type="text" id="fieldAddress" name="fieldAddress" placeholder="Dirección de la cancha" required>
+      </div>
+      <button type="submit" class="btn-primary">Crear Cancha</button>
+    </form>
+  </div>
+</body>
+</html>

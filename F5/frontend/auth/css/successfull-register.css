@@ -1,0 +1,39 @@
+/* ================= FORM CONTAINER ================= */
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: var(--black);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+}
+
+/* ================= SUCCESS ICON ================= */
+.icon-success {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+/* ================= MESSAGE STYLES ================= */
+.message {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.submessage {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ================= FORM CONTENT ================= */
+.form-content {
+  padding: 2rem;
+}

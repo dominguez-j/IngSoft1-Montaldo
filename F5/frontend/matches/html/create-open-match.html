@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Partido Abierto</title>
+    <link rel="stylesheet" href="../../matches/css/matches.css">
+</head>
+<body>
+    <div class="container">
+        <div id="alert-container"></div>
+        <form id="open-match-form" class="open-match-form">
+            <div class="form-group">
+                <label for="fieldName">Cancha a reservar</label>
+                <select id="fieldName" name="fieldName" class="form-control" required></select>
+            </div>
+
+            <div id="freeSlotsListContainer" class="free-slots-container">
+                <div class="pagination">
+                    <button class="btn-page" id="prevPage" disabled>Anterior</button>
+                    <span class="page-info">Página 1 de 1</span>
+                    <button class="btn-page" id="nextPage" disabled>Siguiente</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="minPlayers">Cantidad mínima de jugadores</label>
+                <select id="minPlayers" name="minPlayers" class="form-control" required>
+                  <option value="">Seleccionar</option>
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                  <option value="6">6</option>
+                  <option value="8">8</option>
+                  <option value="10">10</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="maxPlayers">Cantidad máxima de jugadores</label>
+                <select id="maxPlayers" name="maxPlayers" class="form-control" required>
+                  <option value="">Seleccionar</option>
+                  <option value="8">8</option>
+                  <option value="10">10</option>
+                  <option value="12">12</option>
+                  <option value="14">14</option>
+                  <option value="16">16</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Crear Partido</button>
+        </form>
+    </div>
+</body>
+</html>

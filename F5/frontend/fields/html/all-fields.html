@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Canchas</title>
+    <link rel="stylesheet" href="../../fields/css/fields.css">
+    <link rel="stylesheet" href="../../fields/css/field-details.css">
+</head>
+<body>
+  <div class="container">
+    <div class="fields-main-container">
+      <div id="section-fields-list" class="fields-list list-container">
+        <div id="alert-container"></div>
+        <h3>Ver Canchas</h3>
+        <input type="text" id="searchFieldInput" placeholder="Buscar canchas..." style="margin-bottom:10px;width:100%">
+        <div class="filters-container" style="margin-bottom: 15px;">
+          <div class="filter-group">
+            <label for="filterGround">Tipo de suelo</label>
+            <select id="filterGround" class="filter-select"></select>
+          </div>
+          <div class="filter-group">
+            <label for="filterRoof">Techado</label>
+            <select id="filterRoof" class="filter-select">
+              <option value="">Todos</option>
+              <option value="true">Techada</option>
+              <option value="false">No techada</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filterIllumination">Iluminación</label>
+            <select id="filterIllumination" class="filter-select">
+              <option value="">Todas</option>
+              <option value="true">Iluminada</option>
+              <option value="false">No iluminada</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filterZone">Zona</label>
+            <select id="filterZone" class="filter-select"></select>
+          </div>
+        </div>
+        <div id="fieldsListContainer"></div>
+        <div class="pagination">
+          <button class="btn-page" id="prevPage" disabled>Anterior</button>
+          <span class="page-info">Página 1 de 1</span>
+          <button class="btn-page" id="nextPage" disabled>Siguiente</button>
+        </div>
+      </div>
+      <div id="section-field-details" class="dashboard-subsection active" style="display:none;"></div>
+    </div>
+  </div>
+</body>
+</html>

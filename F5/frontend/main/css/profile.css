@@ -1,0 +1,36 @@
+/* ================= PROFILE POPUP ================= */
+.profile-popup {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: var(--light-gray);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    min-width: 300px;
+    border: 2px solid var(--secondary-color);
+}
+
+.profile-popup-content {
+    padding: 20px;
+}
+
+.profile-popup .perfil-info {
+    text-align: left;
+}
+
+.profile-popup .perfil-info h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.profile-popup .perfil-info p {
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.profile-popup .perfil-info i {
+    margin-right: 10px;
+    color: var(--secondary-color);
+}

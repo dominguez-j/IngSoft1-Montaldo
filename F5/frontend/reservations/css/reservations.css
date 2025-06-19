@@ -1,0 +1,20 @@
+/* ================= MAIN SECTION STYLES ================= */
+#section-reservations {
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#section-reservations h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+#section-reservations-list {
+    width: 45%;
+    min-width: 340px;
+    max-width: 500px;
+    margin: 0;
+}

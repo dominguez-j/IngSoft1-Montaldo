@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Partido Cerrado</title>
+    <link rel="stylesheet" href="../../matches/css/matches.css">
+</head>
+<body>
+    <div class="container">
+        <div id="alert-container"></div>
+        <form id="closed-match-form" class="closed-match-form">
+            <div class="form-group">
+                <label for="fieldName">Cancha a reservar</label>
+                <select id="fieldName" name="fieldName" class="form-control" required></select>
+            </div>
+
+            <div id="freeSlotsListContainer" class="free-slots-container">
+                <div class="pagination">
+                    <button class="btn-page" id="prevPage" disabled>Anterior</button>
+                    <span class="page-info">Página 1 de 1</span>
+                    <button class="btn-page" id="nextPage" disabled>Siguiente</button>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="teamAName">Equipo 1</label>
+                <select id="teamAName" name="teamAName" class="form-control" required></select>
+            </div>
+
+            <div class="form-group">
+                <label for="teamBName">Equipo 2</label>
+                <select id="teamBName" name="teamBName" class="form-control" required></select>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Crear Partido</button>
+        </form>
+    </div>
+</body>
+</html>
